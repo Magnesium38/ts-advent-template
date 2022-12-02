@@ -1,10 +1,10 @@
-import { defineConfig } from 'vitest/config'
-import plainText from 'vite-plugin-plain-text'
 import path from 'path'
+import plainText from 'vite-plugin-plain-text'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
 	plugins: [
-		plainText(/\.txt$/),
+		plainText(/\.txt$/u),
 	],
 	resolve: {
 		alias: {
@@ -13,6 +13,6 @@ export default defineConfig({
 	},
 	test: {
 		includeSource: ['src/**/*.{js,ts}'],
-		setupFiles: ['src/array-extensions.ts']
+		setupFiles: ['src/array-extensions.ts'],
 	},
 })
