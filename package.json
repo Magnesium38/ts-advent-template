@@ -12,6 +12,8 @@
 		"vite-node": "^0.25.3"
 	},
 	"scripts": {
-		"day": "vite-node src/run --"
+		"day": "vite-node src/run --",
+		"test": "vitest",
+		"test-ui": "vitest --ui"
 	}
 }

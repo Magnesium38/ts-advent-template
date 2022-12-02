@@ -1,3 +1,5 @@
+import '@/array-extensions'
+
 import fs from 'fs'
 
 const parseDay = (day: string | undefined): number => {
