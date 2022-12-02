@@ -1,0 +1,17 @@
+{
+	"name": "vitest-advent",
+	"version": "1.0.0",
+	"license": "MIT",
+	"devDependencies": {
+		"@vitest/ui": "^0.25.3",
+		"vite-plugin-plain-text": "^1.2.1",
+		"vitest": "^0.25.3"
+	},
+	"dependencies": {
+		"typescript": "^4.9.3",
+		"vite-node": "^0.25.3"
+	},
+	"scripts": {
+		"day": "vite-node src/run --"
+	}
+}
